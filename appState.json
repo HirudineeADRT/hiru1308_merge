@@ -100,11 +100,6 @@
           "version": "2.176.0",
           "dev": true,
           "notRemovable": false
-        },
-        "my-sql": {
-          "name": "my-sql",
-          "version": "1.2.15",
-          "language": "javascript"
         }
       }
     }
@@ -116,7 +111,7 @@
     "projectRegion": "us-east-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1565689532344
+    "lastSave": 1565689625093
   },
   "VCS_STATE": {
     "provider": "GitHub",

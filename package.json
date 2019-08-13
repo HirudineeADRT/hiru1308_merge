@@ -1,9 +1,7 @@
 {
   "name": "hiru1308_merge",
   "version": "1.0.0",
-  "dependencies": {
-    "my-sql": "1.2.15"
-  },
+  "dependencies": {},
   "devDependencies": {
     "aws-sdk": "2.176.0"
   }

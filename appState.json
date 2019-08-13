@@ -22,7 +22,7 @@
         "children": [],
         "isRemovable": true,
         "filePath": "hiru1308_merge/lambda.js",
-        "code": "let AWS = require('aws-sdk');\nconst s3 = new AWS.S3();\n\nexports.handler = function (event, context, callback) {\n\n    s3.listObjects({\n        'Bucket': 'as2-test-lahiru',\n        'MaxKeys': 100,\n        'Prefix': 'this is a test'\n    }).promise()\n        .then(data => {\n            console.log(data);           // successful response\n            /*\n            data = {\n                Contents: [\n                    {\n                       ETag: \"\\\"70ee1738b6b21e2c8a43f3a5ab0eee71\\\"\",\n                       Key: \"example1.jpg\",\n                       LastModified: \"<Date Representation>\",\n                       Owner: {\n                          DisplayName: \"myname\",\n                          ID: \"12345example25102679df27bb0ae12b3f85be6f290b936c4393484be31bebcc\"\n                       },\n                       Size: 11,\n                       StorageClass: \"STANDARD\"\n                    },\n                    // {...}\n                ]\n            }\n            */\n        })\n        .catch(err => {\n            console.log(err, err.stack); // an error occurred\n        });\n\n\n    callback(null, { \"message\": \"Successfully executed\" });\n}",
+        "code": "let AWS = require('aws-sdk');\nconst s3 = new AWS.S3();\n\nexports.handler = function (event, context, callback) {\n\n    callback(null, { \"message\": \"Successfully executed\" });\n}",
         "config": {
           "runtime": "nodejs8.10",
           "handler": "handler",
@@ -45,71 +45,6 @@
     ],
     "currentFileId": "befa2da4-2049-4d0d-80e9-b25a86554ea7",
     "resources": {
-      "apigusEast1TestAPItestpost": {
-        "name": "apigusEast1TestAPItestpost",
-        "type": "API_GATEWAY",
-        "config": {
-          "selectedRegion": "us-east-1",
-          "apiMode": 1,
-          "apiName": "TestAPI",
-          "apiId": "0itznun7w3",
-          "endpointType": "EDGE",
-          "rootResourceId": "h2lelj6j7k",
-          "existingResources": {
-            "/test": "1aztfv",
-            "/test/janaka": "3zhfku",
-            "/MyLambda": "98nqbj",
-            "/test/foo": "alrh6s",
-            "/": "h2lelj6j7k",
-            "/testWithSlash": "q4m4g1",
-            "/testtwospeciallambda": "q4szm3",
-            "/testtwospecialkumutest": "wey3lk"
-          },
-          "resourceMode": 1,
-          "resourcePath": "/test",
-          "resourceName": "test",
-          "resourceId": "1aztfv",
-          "restMethod": "POST",
-          "proxyIntegration": false,
-          "enableCORS": false,
-          "stageMode": 1,
-          "stageName": "prod2",
-          "stageDeploymentId": "wno1dr",
-          "mode": 1
-        }
-      },
-      "apigusEast1TestAPItest1234post": {
-        "name": "apigusEast1TestAPItest1234post",
-        "type": "API_GATEWAY",
-        "config": {
-          "selectedRegion": "us-east-1",
-          "apiMode": 1,
-          "apiName": "TestAPI",
-          "apiId": "0itznun7w3",
-          "endpointType": "EDGE",
-          "rootResourceId": "h2lelj6j7k",
-          "existingResources": {
-            "/test": "1aztfv",
-            "/test/janaka": "3zhfku",
-            "/MyLambda": "98nqbj",
-            "/test/foo": "alrh6s",
-            "/": "h2lelj6j7k",
-            "/testWithSlash": "q4m4g1",
-            "/testtwospeciallambda": "q4szm3",
-            "/testtwospecialkumutest": "wey3lk"
-          },
-          "resourceMode": 0,
-          "resourceName": "test/1234",
-          "resourcePath": "/test/1234",
-          "restMethod": "POST",
-          "proxyIntegration": false,
-          "enableCORS": false,
-          "stageMode": 1,
-          "stageName": "socks",
-          "stageDeploymentId": "p1q6je",
-          "mode": 1
-        }
-      },
       "apigusEast1TestAPItest1234aapost": {
         "name": "apigusEast1TestAPItest1234aapost",
         "type": "API_GATEWAY",
@@ -140,17 +75,6 @@
           "stageName": "socks",
           "stageDeploymentId": "p1q6je",
           "mode": 1
-        }
-      },
-      "s3as2TestLahiru": {
-        "name": "s3as2TestLahiru",
-        "type": "S3",
-        "config": {
-          "mode": 1,
-          "bucket": {
-            "region": "us-east-1",
-            "name": "as2-test-lahiru"
-          }
         }
       }
     },
@@ -187,7 +111,7 @@
     "projectRegion": "us-east-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1565689215597
+    "lastSave": 1565689336766
   },
   "VCS_STATE": {
     "provider": "GitHub",

@@ -105,8 +105,8 @@
           "proxyIntegration": false,
           "enableCORS": false,
           "stageMode": 1,
-          "stageName": "prod2",
-          "stageDeploymentId": "wno1dr",
+          "stageName": "socks",
+          "stageDeploymentId": "p1q6je",
           "mode": 1
         }
       }

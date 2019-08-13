@@ -1,0 +1,77 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "4ac8342c-54d1-4a52-9b1d-a98048ee2013": {
+        "id": "4ac8342c-54d1-4a52-9b1d-a98048ee2013",
+        "parent": null,
+        "name": "hiru1308_merge",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "befa2da4-2049-4d0d-80e9-b25a86554ea7"
+        ],
+        "isRemovable": false,
+        "filePath": "hiru1308_merge"
+      },
+      "befa2da4-2049-4d0d-80e9-b25a86554ea7": {
+        "id": "befa2da4-2049-4d0d-80e9-b25a86554ea7",
+        "parent": "4ac8342c-54d1-4a52-9b1d-a98048ee2013",
+        "name": "lambda.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "hiru1308_merge/lambda.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": []
+      }
+    },
+    "deletedFiles": [],
+    "rootNode": "4ac8342c-54d1-4a52-9b1d-a98048ee2013",
+    "openFiles": [
+      "befa2da4-2049-4d0d-80e9-b25a86554ea7"
+    ],
+    "currentFileId": "befa2da4-2049-4d0d-80e9-b25a86554ea7",
+    "resources": {},
+    "customTemplate": {
+      "dialect": null,
+      "definitions": {}
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "hiru1308_merge",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "platformRegions": {},
+    "lastSave": 1565688776294
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "hiru1308_merge",
+      "url": "https://github.com/HirudineeADRT/hiru1308_merge"
+    }
+  }
+}
